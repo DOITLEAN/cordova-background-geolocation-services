@@ -172,8 +172,8 @@ public class BackgroundLocationUpdateService
 	
     private Notification getNotification() {
 	
-		//Build.VERSION_CODES.JELLY_BEAN = 16
-		//Build.VERSION_CODES.O = 26
+	//Build.VERSION_CODES.JELLY_BEAN = 16
+	//Build.VERSION_CODES.O = 26
 
         Notification.Builder builder;
         Context context = getApplicationContext();
