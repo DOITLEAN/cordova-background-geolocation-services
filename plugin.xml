@@ -65,16 +65,21 @@
         <hook type="after_platform_add" src="hooks/add_swift_support.js"/>
         
         <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
-            <string>${EXECUTABLE_NAME} Would Like to Use Your Current Location Even In Background. This allows ${EXECUTABLE_NAME} to calculate your initial ETA and proactively notify you if it looks like you are going to miss it.  It also eliminates the need for those pesky load status phone calls.</string>
+            <string>${EXECUTABLE_NAME} Would Like to Use Your Current Location Even In Background. This allows ${EXECUTABLE_NAME} to calculate your initial ETA and proactively notify you if it looks like you are going to miss it. It also eliminates the need for those pesky load status phone calls.</string>
         </config-file>
 
         <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
-            <string>${EXECUTABLE_NAME} Would Like to Use Your Current Location Even In Background. This allows ${EXECUTABLE_NAME} to calculate your initial ETA and proactively notify you if it looks like you are going to miss it.  It also eliminates the need for those pesky load status phone calls.</string>
+            <string>${EXECUTABLE_NAME} Would Like to Use Your Current Location Even In Background. This allows ${EXECUTABLE_NAME} to calculate your initial ETA and proactively notify you if it looks like you are going to miss it. It also eliminates the need for those pesky load status phone calls.</string>
         </config-file>
 
         <!-- Usage description of Motion, mandatory since iOS 10 -->
         <config-file target="*-Info.plist" parent="NSMotionUsageDescription">
             <string>${EXECUTABLE_NAME} Would Like to Use Motion Data. Its used to shut off gps when you are still.</string>
+        </config-file>
+        
+        <preference name="CUSTOM_BLUETOOTH_REQUEST" default="We would like to use your bluetooth for tracking location reasons."/>
+        <config-file target="*-Info.plist" parent="NSBluetoothAlwaysUsageDescription">
+            <string>$CUSTOM_BLUETOOTH_REQUEST</string>
         </config-file>
         
         <config-file target="*-Info.plist" parent="UIBackgroundModes">
