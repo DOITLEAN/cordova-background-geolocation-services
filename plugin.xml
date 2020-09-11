@@ -77,7 +77,7 @@
             <string>${EXECUTABLE_NAME} Would Like to Use Motion Data. Its used to shut off gps when you are still.</string>
         </config-file>
         
-        <preference name="CUSTOM_BLUETOOTH_REQUEST" default="We would like to use your bluetooth to improve the accuracy of location tracking."/>
+        <preference name="CUSTOM_BLUETOOTH_REQUEST" default="We would like to use your bluetooth for monitoring load progress."/>
         <config-file target="*-Info.plist" parent="NSBluetoothAlwaysUsageDescription">
             <string>$CUSTOM_BLUETOOTH_REQUEST</string>
         </config-file>
