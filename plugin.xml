@@ -18,6 +18,7 @@
         <clobbers target="plugins.backgroundLocationServices"/>
     </js-module>
 
+    <hook type="before_plugin_install" src="hooks/dependencyInstaller.js"/>
     <!-- android -->
     <platform name="android">
         <framework src="com.google.android.gms:play-services-location:16.0.0" />
